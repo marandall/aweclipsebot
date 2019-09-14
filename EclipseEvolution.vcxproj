@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_WithDebug|Win32">
+      <Configuration>Release_WithDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_WithDebug|x64">
+      <Configuration>Release_WithDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C522E113-31BB-427F-BBFE-C43A6111F4C6}</ProjectGuid>
+    <RootNamespace>EclipseEvolution</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_WithDebug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_WithDebug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_WithDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_WithDebug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27428.2015</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <EnableManagedIncrementalBuild>True</EnableManagedIncrementalBuild>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <EnableManagedIncrementalBuild>True</EnableManagedIncrementalBuild>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_WithDebug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_WithDebug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>aw.lib;ws2_32.lib;psapi.lib;winmm.lib;gdiplus.lib;ole32.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>aw.lib;ws2_32.lib;psapi.lib;winmm.lib;gdiplus.lib;ole32.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>aw.lib;ws2_32.lib;psapi.lib;winmm.lib;gdiplus.lib;ole32.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerboseLib</ShowProgress>
+      <OutputFile>$(OutDir)..\debug\$(ProjectName)_Release.exe</OutputFile>
+      <DelayLoadDLLs>aw.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>aw.lib;ws2_32.lib;psapi.lib;winmm.lib;gdiplus.lib;ole32.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerboseLib</ShowProgress>
+      <OutputFile>$(OutDir)..\debug\$(ProjectName)_Release.exe</OutputFile>
+      <DelayLoadDLLs>aw.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_WithDebug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>aw.lib;ws2_32.lib;psapi.lib;winmm.lib;gdiplus.lib;ole32.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)..\debug\$(ProjectName)_release.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_WithDebug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>aw.lib;ws2_32.lib;psapi.lib;winmm.lib;gdiplus.lib;ole32.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)..\debug\$(ProjectName)_release.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ADODB.cpp" />
+    <ClCompile Include="app_umbra.cpp" />
+    <ClCompile Include="AttributeEnum.cpp" />
+    <ClCompile Include="AvatarHistory.cpp" />
+    <ClCompile Include="AvatarHistoryDialog.cpp" />
+    <ClCompile Include="Avatars.cpp" />
+    <ClCompile Include="AvatarsDatabaseDialog.cpp" />
+    <ClCompile Include="AvatarsDialog.cpp" />
+    <ClCompile Include="Avatars_Umbra.cpp" />
+    <ClCompile Include="Avatar_Comms.cpp" />
+    <ClCompile Include="Avatar_Icons.cpp" />
+    <ClCompile Include="Avatar_Processes.cpp" />
+    <ClCompile Include="Avatar_Rights.cpp" />
+    <ClCompile Include="Avatar_Security.cpp" />
+    <ClCompile Include="Avatar_Strings.cpp" />
+    <ClCompile Include="Avatar_Umbra.cpp" />
+    <ClCompile Include="Avatar_Zones.cpp" />
+    <ClCompile Include="AWSDK_Bot.cpp" />
+    <ClCompile Include="awsdk_entity.cpp" />
+    <ClCompile Include="AWSDK_Objects.cpp" />
+    <ClCompile Include="AWSDK_Query.cpp" />
+    <ClCompile Include="awsdk_query_cache.cpp" />
+    <ClCompile Include="awsdk_umbra_extensions.cpp" />
+    <ClCompile Include="AWSDK_World.cpp" />
+    <ClCompile Include="base64.cpp" />
+    <ClCompile Include="Beacons.cpp" />
+    <ClCompile Include="BotgramProtocol.cpp" />
+    <ClCompile Include="BotgramProtocolV2.cpp" />
+    <ClCompile Include="ButtonListButtonControl.cpp" />
+    <ClCompile Include="ButtonListControl.cpp" />
+    <ClCompile Include="CallbackQueue.cpp" />
+    <ClCompile Include="ChatFilterDialog.cpp" />
+    <ClCompile Include="CIS_AvatarWarp.cpp" />
+    <ClCompile Include="CIS_Basic.cpp" />
+    <ClCompile Include="CIS_Beacons.cpp" />
+    <ClCompile Include="CIS_ChatRelay.cpp" />
+    <ClCompile Include="CIS_Communications.cpp" />
+    <ClCompile Include="CIS_Configuration.cpp" />
+    <ClCompile Include="CIS_Control.cpp" />
+    <ClCompile Include="CIS_Dispatch.cpp" />
+    <ClCompile Include="CIS_Ejection.cpp" />
+    <ClCompile Include="cis_exec.cpp" />
+    <ClCompile Include="CIS_GlobalCommands.cpp" />
+    <ClCompile Include="CIS_Movers.cpp" />
+    <ClCompile Include="CIS_Property.cpp" />
+    <ClCompile Include="cis_toolkit.cpp" />
+    <ClCompile Include="CIS_Universe.cpp" />
+    <ClCompile Include="CIS_UniverseUserList.cpp" />
+    <ClCompile Include="CIS_World.cpp" />
+    <ClCompile Include="CitizenLookup.cpp" />
+    <ClCompile Include="CitizenLookupDialog.cpp" />
+    <ClCompile Include="ColourButton.cpp" />
+    <ClCompile Include="ComboBox.cpp" />
+    <ClCompile Include="CommandConfigDialog.cpp" />
+    <ClCompile Include="CommonBot.cpp" />
+    <ClCompile Include="CommonFeatures.cpp" />
+    <ClCompile Include="ConsoleMessageDialog.cpp" />
+    <ClCompile Include="core.cpp" />
+    <ClCompile Include="crypto.cpp" />
+    <ClCompile Include="crypto_md5.cpp" />
+    <ClCompile Include="DateTimeDialog.cpp" />
+    <ClCompile Include="DesktopConnector.cpp" />
+    <ClCompile Include="DynamicRights.cpp" />
+    <ClCompile Include="EclipseBot_Avatars.cpp" />
+    <ClCompile Include="EclipseBot_Communications.cpp" />
+    <ClCompile Include="EclipseBot_Login.cpp" />
+    <ClCompile Include="EclipseBot_Movers.cpp" />
+    <ClCompile Include="EclipseBot_Property.cpp" />
+    <ClCompile Include="EclipseBot_Query.cpp" />
+    <ClCompile Include="EclipseBot_Umbra.cpp" />
+    <ClCompile Include="EclipseBot_UniUserList.cpp" />
+    <ClCompile Include="EclipseBot_Universe.cpp" />
+    <ClCompile Include="EclipseBot_World.cpp" />
+    <ClCompile Include="EclipseBot_WorldList.cpp" />
+    <ClCompile Include="EclipseDialog_Init.cpp" />
+    <ClCompile Include="EclipseDialog_MessageMap.cpp" />
+    <ClCompile Include="EclipseEvolution.cpp" />
+    <ClCompile Include="EclipseEvolutionDialog.cpp" />
+    <ClCompile Include="EclipseInputDialog.cpp" />
+    <ClCompile Include="EclipseLogDialog.cpp" />
+    <ClCompile Include="EditExtended.cpp" />
+    <ClCompile Include="EjectDialog.cpp" />
+    <ClCompile Include="FilterPolicy.cpp" />
+    <ClCompile Include="FloodPreventionDialog.cpp" />
+    <ClCompile Include="GeneralOptionsDialog.cpp" />
+    <ClCompile Include="GlobalConversions.cpp" />
+    <ClCompile Include="GlobalDEX.cpp" />
+    <ClCompile Include="GlobalMain.cpp" />
+    <ClCompile Include="GlobalVariables.cpp" />
+    <ClCompile Include="GNet_QueryMap.cpp" />
+    <ClCompile Include="GraphicsLabel.cpp" />
+    <ClCompile Include="GraphicsNet_2DMap.cpp" />
+    <ClCompile Include="GraphicsNet_TimeArray.cpp" />
+    <ClCompile Include="HeadsUp.cpp" />
+    <ClCompile Include="HeadsUp_UserPlugin.cpp" />
+    <ClCompile Include="Helpers.cpp" />
+    <ClCompile Include="HudConfigDialog.cpp" />
+    <ClCompile Include="ImmigrationOfficerDialog.cpp" />
+    <ClCompile Include="InputBoxDialog.cpp" />
+    <ClCompile Include="InputLineDialog.cpp" />
+    <ClCompile Include="InterfaceConfig.cpp" />
+    <ClCompile Include="InterfaceConfigDialog.cpp" />
+    <ClCompile Include="IpToDNS.cpp" />
+    <ClCompile Include="isScriptCommandsDialog.cpp" />
+    <ClCompile Include="JumpEditorDialog.cpp" />
+    <ClCompile Include="JumpManagerDialog.cpp" />
+    <ClCompile Include="JumpTransferOwnershipDialog.cpp" />
+    <ClCompile Include="LargeQueryDialog.cpp" />
+    <ClCompile Include="ListCtrlGpx.cpp" />
+    <ClCompile Include="listener.cpp" />
+    <ClCompile Include="Location.cpp" />
+    <ClCompile Include="MapDialog.cpp" />
+    <ClCompile Include="MessageInfoDialog.cpp" />
+    <ClCompile Include="ModalPropertyDialog2.cpp" />
+    <ClCompile Include="Movement.cpp" />
+    <ClCompile Include="MovementDialog.cpp" />
+    <ClCompile Include="MoverEditorDialog.cpp" />
+    <ClCompile Include="Movers.cpp" />
+    <ClCompile Include="MoversDialog.cpp" />
+    <ClCompile Include="OutputFormatCtrl.cpp" />
+    <ClCompile Include="Profiles.cpp" />
+    <ClCompile Include="ProfilesDialog.cpp" />
+    <ClCompile Include="ProfilesManagerDialog.cpp" />
+    <ClCompile Include="ProgressDialog.cpp" />
+    <ClCompile Include="PropertyDetailDialog.cpp" />
+    <ClCompile Include="PropertyScriptCtrl.cpp" />
+    <ClCompile Include="PropertySelectProject.cpp" />
+    <ClCompile Include="property_async.cpp" />
+    <ClCompile Include="property_editors.cpp" />
+    <ClCompile Include="property_filters.cpp" />
+    <ClCompile Include="property_object.cpp" />
+    <ClCompile Include="property_objects.cpp" />
+    <ClCompile Include="property_objects_filters.cpp" />
+    <ClCompile Include="property_objects_propdump.cpp" />
+    <ClCompile Include="property_objects_selection.cpp" />
+    <ClCompile Include="property_project.cpp" />
+    <ClCompile Include="property_projects.cpp" />
+    <ClCompile Include="property_project_building.cpp" />
+    <ClCompile Include="property_query_5x5.cpp" />
+    <ClCompile Include="property_query_queue.cpp" />
+    <ClCompile Include="property_query_world.cpp" />
+    <ClCompile Include="property_regions.cpp" />
+    <ClCompile Include="property_registry.cpp" />
+    <ClCompile Include="QueryFilterDialog.cpp" />
+    <ClCompile Include="QueryInterfaceDialog.cpp" />
+    <ClCompile Include="QueryProgressDialog.cpp" />
+    <ClCompile Include="QueryWorldProgressDialog.cpp" />
+    <ClCompile Include="Recorder.cpp" />
+    <ClCompile Include="RecordingDialog.cpp" />
+    <ClCompile Include="RelayAdvancedRelay.cpp" />
+    <ClCompile Include="RelayChannelPermissionDialog.cpp" />
+    <ClCompile Include="RelayChannelsConfigDialog.cpp" />
+    <ClCompile Include="RelayChannelsDialog.cpp" />
+    <ClCompile Include="RelayConfigDialog.cpp" />
+    <ClCompile Include="RelayConfigUsersDialog.cpp" />
+    <ClCompile Include="RelayGlobalChat.cpp" />
+    <ClCompile Include="RelayMuteList.cpp" />
+    <ClCompile Include="RelayPrivateChannels.cpp" />
+    <ClCompile Include="Relays.cpp" />
+    <ClCompile Include="RepeaterDialog.cpp" />
+    <ClCompile Include="RepetitionTimer.cpp" />
+    <ClCompile Include="ReportDialog.cpp" />
+    <ClCompile Include="Reports.cpp" />
+    <ClCompile Include="RichEditCtrl_Ext.cpp" />
+    <ClCompile Include="ScriptEditorDialog.cpp" />
+    <ClCompile Include="scripting_evo2.cpp" />
+    <ClCompile Include="scripting_evo2_crypto.cpp" />
+    <ClCompile Include="scripting_evo2_interface.cpp" />
+    <ClCompile Include="scripting_evo2_odbc.cpp" />
+    <ClCompile Include="scripting_evo2_trayicon.cpp" />
+    <ClCompile Include="scripting_host.cpp" />
+    <ClCompile Include="scripting_timer.cpp" />
+    <ClCompile Include="SecurityHeaderDialog.cpp" />
+    <ClCompile Include="SecurityListDialog.cpp" />
+    <ClCompile Include="SecurityRightsDialog.cpp" />
+    <ClCompile Include="SelectUrlDialog.cpp" />
+    <ClCompile Include="SerializationEditorDialog.cpp" />
+    <ClCompile Include="serializer.cpp" />
+    <ClCompile Include="SingleLineDialog.cpp" />
+    <ClCompile Include="SliderCtrlEx.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_WithDebug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_WithDebug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TeleportDialog.cpp" />
+    <ClCompile Include="TextBox.cpp" />
+    <ClCompile Include="TextListDialog.cpp" />
+    <ClCompile Include="TreeCtrlGpx.cpp" />
+    <ClCompile Include="TreeCtrlGpx_Std.cpp" />
+    <ClCompile Include="umbra\umbra_classlib_graphics.cpp" />
+    <ClCompile Include="umbra\umbra_classlib_system.cpp" />
+    <ClCompile Include="umbra\umbra_classlib_usl.cpp" />
+    <ClCompile Include="umbra\umbra_classlib_usl_adodb.cpp" />
+    <ClCompile Include="umbra\umbra_classlib_win32.cpp" />
+    <ClCompile Include="umbra\umbra_classlib_win32_filesystem.cpp" />
+    <ClCompile Include="umbra\umbra_classlib_win32_gdi.cpp" />
+    <ClCompile Include="umbra\umbra_compiler.cpp" />
+    <ClCompile Include="umbra\umbra_host.cpp" />
+    <ClCompile Include="umbra\umbra_instructions_controlstatements.cpp" />
+    <ClCompile Include="umbra\umbra_instructions_managed.cpp" />
+    <ClCompile Include="umbra\umbra_instructions_opcodes.cpp" />
+    <ClCompile Include="umbra\umbra_remoteclass.cpp" />
+    <ClCompile Include="umbra\umbra_resourcemanager.cpp" />
+    <ClCompile Include="umbra\umbra_tokenizer.cpp" />
+    <ClCompile Include="umbra\umbra_tools.cpp" />
+    <ClCompile Include="umbra\umbra_variant.cpp" />
+    <ClCompile Include="umbra\umbra_variantmemory.cpp" />
+    <ClCompile Include="UniverseCitizenAddDialog.cpp" />
+    <ClCompile Include="UniverseCitizenDialog.cpp" />
+    <ClCompile Include="UniverseEjectionDialog.cpp" />
+    <ClCompile Include="UniverseOptionsDialog.cpp" />
+    <ClCompile Include="UniverseUserList.cpp" />
+    <ClCompile Include="Waypoints.cpp" />
+    <ClCompile Include="WA_Group.cpp" />
+    <ClCompile Include="web.cpp" />
+    <ClCompile Include="WebClientDialog.cpp" />
+    <ClCompile Include="WorldEjectionsDialog.cpp" />
+    <ClCompile Include="WorldList.cpp" />
+    <ClCompile Include="WorldOptionsDialog.cpp" />
+    <ClCompile Include="WorldOptionsDialog_AG.cpp" />
+    <ClCompile Include="WorldsListDialog2.cpp" />
+    <ClCompile Include="world_ejections.cpp" />
+    <ClCompile Include="xml_docparser.cpp" />
+    <ClCompile Include="ZoneEditorDialog.cpp" />
+    <ClCompile Include="Zones.cpp" />
+    <ClCompile Include="ZonesConfigDialog.cpp" />
+    <ClCompile Include="ZonesEditorCylinderDialog.cpp" />
+    <ClCompile Include="ZonesEditorPolygonDialog.cpp" />
+    <ClCompile Include="ZonesEditorRectangleDialog.cpp" />
+    <ClCompile Include="ZonesEditorSphereDialog.cpp" />
+    <ClCompile Include="Zones_Config.cpp" />
+    <ClCompile Include="zones_io.cpp" />
+    <ClCompile Include="zones_regions.cpp" />
+    <ClCompile Include="Zones_Umbra.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ADODB_Connection.h" />
+    <ClInclude Include="ADODB_Recordset.h" />
+    <ClInclude Include="ADODB_SQLBuilder.h" />
+    <ClInclude Include="aex_flood_prevention.h" />
+    <ClInclude Include="autonumber.h" />
+    <ClInclude Include="Avatar.h" />
+    <ClInclude Include="AvatarHistory.h" />
+    <ClInclude Include="AvatarHistoryDialog.h" />
+    <ClInclude Include="AvatarOptions.h" />
+    <ClInclude Include="Avatars.h" />
+    <ClInclude Include="AvatarsDatabaseDialog.h" />
+    <ClInclude Include="AvatarsDialog.h" />
+    <ClInclude Include="Aw.h" />
+    <ClInclude Include="AWSDK_AttributeMap.h" />
+    <ClInclude Include="AWSDK_Avatar.h" />
+    <ClInclude Include="AWSDK_Bot.h" />
+    <ClInclude Include="AWSDK_Bots.h" />
+    <ClInclude Include="AWSDK_Citizen.h" />
+    <ClInclude Include="AWSDK_Colours.h" />
+    <ClInclude Include="AWSDK_Config.h" />
+    <ClInclude Include="awsdk_entity.h" />
+    <ClInclude Include="AWSDK_Enums.h" />
+    <ClInclude Include="awsdk_group_map.h" />
+    <ClInclude Include="AWSDK_HudElement.h" />
+    <ClInclude Include="AWSDK_Location.h" />
+    <ClInclude Include="AWSDK_Macros.h" />
+    <ClInclude Include="AWSDK_Objects_v3.h" />
+    <ClInclude Include="awsdk_object_support.h" />
+    <ClInclude Include="AWSDK_Profile.h" />
+    <ClInclude Include="AWSDK_Query.h" />
+    <ClInclude Include="AWSDK_ReasonCodes.h" />
+    <ClInclude Include="AWSDK_Support.h" />
+    <ClInclude Include="AWSDK_Universe.h" />
+    <ClInclude Include="AWSDK_World.h" />
+    <ClInclude Include="AWSDK_WorldRights.h" />
+    <ClInclude Include="base64.h" />
+    <ClInclude Include="Beacons.h" />
+    <ClInclude Include="BotgramProtocol.h" />
+    <ClInclude Include="BotgramProtocolV2.h" />
+    <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="ButtonListButtonControl.h" />
+    <ClInclude Include="ButtonListControl.h" />
+    <ClInclude Include="CallbackQueue.h" />
+    <ClInclude Include="ChatFilterDialog.h" />
+    <ClInclude Include="CisScriptCommands.h" />
+    <ClInclude Include="CIS_Basic.h" />
+    <ClInclude Include="CIS_ChatRelay.h" />
+    <ClInclude Include="CIS_CommandBindings.h" />
+    <ClInclude Include="CIS_Communications.h" />
+    <ClInclude Include="CIS_ConfigEjection.h" />
+    <ClInclude Include="CIS_ConfigEjection_AG.h" />
+    <ClInclude Include="CIS_ConfigInterface.h" />
+    <ClInclude Include="CIS_ConfigInterface_AG.h" />
+    <ClInclude Include="CIS_ConfigJumpPoints.h" />
+    <ClInclude Include="CIS_ConfigJumpPoints_AG.h" />
+    <ClInclude Include="CIS_ConfigScriptedCommand_AG.h" />
+    <ClInclude Include="CIS_Configuration.h" />
+    <ClInclude Include="cis_delayedlookup.h" />
+    <ClInclude Include="cis_dispatch.h" />
+    <ClInclude Include="cis_exec.h" />
+    <ClInclude Include="cis_interfaces.h" />
+    <ClInclude Include="cis_macros.h" />
+    <ClInclude Include="CIS_Movers.h" />
+    <ClInclude Include="CIS_Property.h" />
+    <ClInclude Include="CIS_SlideShow.h" />
+    <ClInclude Include="cis_toolkit.h" />
+    <ClInclude Include="CIS_Universe.h" />
+    <ClInclude Include="CIS_UniverseUserList.h" />
+    <ClInclude Include="CIS_World.h" />
+    <ClInclude Include="Citizen.h" />
+    <ClInclude Include="CitizenLookupDialog.h" />
+    <ClInclude Include="CitizenLookup_Kernel.h" />
+    <ClInclude Include="ColourButton.h" />
+    <ClInclude Include="colours.h" />
+    <ClInclude Include="ComboBox.h" />
+    <ClInclude Include="CommandConfigDialog.h" />
+    <ClInclude Include="CommandParser.h" />
+    <ClInclude Include="CommonAutoResponding.h" />
+    <ClInclude Include="CommonAutoResponding_AG.h" />
+    <ClInclude Include="CommonBot.h" />
+    <ClInclude Include="CommonFeatures.h" />
+    <ClInclude Include="CommonGreetings.h" />
+    <ClInclude Include="CommonGreetings_AG.h" />
+    <ClInclude Include="ConsoleFilter.h" />
+    <ClInclude Include="ConsoleMessageDialog.h" />
+    <ClInclude Include="crypto.h" />
+    <ClInclude Include="crypto_crc32.h" />
+    <ClInclude Include="crypto_md5.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="DateTimeDialog.h" />
+    <ClInclude Include="DesktopConnector.h" />
+    <ClInclude Include="DialogCore.h" />
+    <ClInclude Include="DynamicRights.h" />
+    <ClInclude Include="EclipseBot.h" />
+    <ClInclude Include="EclipseBot_PrivilegeResolver.h" />
+    <ClInclude Include="EclipseDialog_MainIcons.h" />
+    <ClInclude Include="EclipseDialog_Timers.h" />
+    <ClInclude Include="EclipseEvolution.h" />
+    <ClInclude Include="EclipseEvolutionDialog.h" />
+    <ClInclude Include="EclipseInputDialog.h" />
+    <ClInclude Include="EclipseLogDialog.h" />
+    <ClInclude Include="EditExtended.h" />
+    <ClInclude Include="EjectDialog.h" />
+    <ClInclude Include="FileLoader.h" />
+    <ClInclude Include="FloodPreventionDialog.h" />
+    <ClInclude Include="FloodPreventionPolicy.h" />
+    <ClInclude Include="GeneralOptionsDialog.h" />
+    <ClInclude Include="GlobalColours.h" />
+    <ClInclude Include="GlobalConversions.h" />
+    <ClInclude Include="GlobalDataExchange.h" />
+    <ClInclude Include="GlobalDEX.h" />
+    <ClInclude Include="GlobalEvent.h" />
+    <ClInclude Include="GlobalFilePaths.h" />
+    <ClInclude Include="GlobalGui.h" />
+    <ClInclude Include="GlobalMacros.h" />
+    <ClInclude Include="GlobalOutput.h" />
+    <ClInclude Include="GlobalTypedefs.h" />
+    <ClInclude Include="GlobalUmbra.h" />
+    <ClInclude Include="GlobalVariables.h" />
+    <ClInclude Include="GNet_QueryMap.h" />
+    <ClInclude Include="GraphicsLabel.h" />
+    <ClInclude Include="GraphicsNet_2DMap.h" />
+    <ClInclude Include="GraphicsNet_Base.h" />
+    <ClInclude Include="GraphicsNet_TimeArray.h" />
+    <ClInclude Include="HeadsUp.h" />
+    <ClInclude Include="HeadsUp_Configuration_AG.h" />
+    <ClInclude Include="HeadsUp_Element.h" />
+    <ClInclude Include="HeadsUp_StoredTrayItem.h" />
+    <ClInclude Include="HeadsUp_StoredTrayItem_AG.h" />
+    <ClInclude Include="HeadsUp_UserPlugin.h" />
+    <ClInclude Include="HeadsUp_User_AG.h" />
+    <ClInclude Include="Helpers_Text.h" />
+    <ClInclude Include="Helpers_Time.h" />
+    <ClInclude Include="Helpers_XML.h" />
+    <ClInclude Include="high_performance_encoder.h" />
+    <ClInclude Include="hud.h" />
+    <ClInclude Include="HudConfigDialog.h" />
+    <ClInclude Include="IConfigLoader.h" />
+    <ClInclude Include="ImmigrationOfficerDialog.h" />
+    <ClInclude Include="InputBoxDialog.h" />
+    <ClInclude Include="InputFlags.h" />
+    <ClInclude Include="InputHistory.h" />
+    <ClInclude Include="InputLineDialog.h" />
+    <ClInclude Include="InterfaceConfig.h" />
+    <ClInclude Include="InterfaceConfigDialog.h" />
+    <ClInclude Include="InterfaceConfig_ChatDisplay_AG.h" />
+    <ClInclude Include="InterfaceConfig_Layout_AG.h" />
+    <ClInclude Include="InterfaceConfig_Logging_AG.h" />
+    <ClInclude Include="InterfaceLayout.h" />
+    <ClInclude Include="IpToDNS.h" />
+    <ClInclude Include="isScriptCommandsDialog.h" />
+    <ClInclude Include="JumpEditorDialog.h" />
+    <ClInclude Include="JumpManagerDialog.h" />
+    <ClInclude Include="JumpTransferOwnershipDialog.h" />
+    <ClInclude Include="KnownList.h" />
+    <ClInclude Include="LargeQueryDialog.h" />
+    <ClInclude Include="layout_manager.h" />
+    <ClInclude Include="ListCtrlGpx.h" />
+    <ClInclude Include="listener.h" />
+    <ClInclude Include="LiveCacheCallback.h" />
+    <ClInclude Include="Location.h" />
+    <ClInclude Include="MapDialog.h" />
+    <ClInclude Include="Map_Int2String.h" />
+    <ClInclude Include="MessageInfoDialog.h" />
+    <ClInclude Include="messages.h" />
+    <ClInclude Include="MiniParser.h" />
+    <ClInclude Include="ModalPropertyDialog2.h" />
+    <ClInclude Include="movement.h" />
+    <ClInclude Include="MovementDialog.h" />
+    <ClInclude Include="movement_circle.h" />
+    <ClInclude Include="movement_follow.h" />
+    <ClInclude Include="movement_interface.h" />
+    <ClInclude Include="movement_waypoints.h" />
+    <ClInclude Include="MoverEditorDialog.h" />
+    <ClInclude Include="Movers.h" />
+    <ClInclude Include="MoversDialog.h" />
+    <ClInclude Include="movers_autodriver.h" />
+    <ClInclude Include="OutputFormatCtrl.h" />
+    <ClInclude Include="performance.h" />
+    <ClInclude Include="Profiles.h" />
+    <ClInclude Include="ProfilesDialog.h" />
+    <ClInclude Include="ProfilesManagerDialog.h" />
+    <ClInclude Include="ProgressDialog.h" />
+    <ClInclude Include="PropertyDetailDialog.h" />
+    <ClInclude Include="PropertyProject.h" />
+    <ClInclude Include="PropertyScriptCtrl.h" />
+    <ClInclude Include="PropertySelectProject.h" />
+    <ClInclude Include="property_asynchandler.h" />
+    <ClInclude Include="property_async_command.h" />
+    <ClInclude Include="property_editors.h" />
+    <ClInclude Include="property_editor_Duplicate_AG.h" />
+    <ClInclude Include="property_editor_ReplaceField_AG.h" />
+    <ClInclude Include="property_editor_StringReplace_AG.h" />
+    <ClInclude Include="property_editor_Translate_AG.h" />
+    <ClInclude Include="property_filters.h" />
+    <ClInclude Include="property_filters_Citizens_AG.h" />
+    <ClInclude Include="property_filters_fref.h" />
+    <ClInclude Include="property_filters_Inequality_AG.h" />
+    <ClInclude Include="property_filters_MoverBounds_AG.h" />
+    <ClInclude Include="property_filters_ParticleBounds_AG.h" />
+    <ClInclude Include="property_filters_SelectionRect_AG.h" />
+    <ClInclude Include="property_filters_StringFinder_AG.h" />
+    <ClInclude Include="property_filters_TypeFinder_AG.h" />
+    <ClInclude Include="property_filters_UserType_AG.h" />
+    <ClInclude Include="property_filters_ZoneBounds_AG.h" />
+    <ClInclude Include="property_filters_Zones_AG.h" />
+    <ClInclude Include="property_hp_parser.h" />
+    <ClInclude Include="property_markers.h" />
+    <ClInclude Include="property_method_controls.h" />
+    <ClInclude Include="property_object.h" />
+    <ClInclude Include="property_objects.h" />
+    <ClInclude Include="property_project.h" />
+    <ClInclude Include="property_projects.h" />
+    <ClInclude Include="property_Project_AG.h" />
+    <ClInclude Include="property_query.h" />
+    <ClInclude Include="property_query_5x5.h" />
+    <ClInclude Include="property_query_queue.h" />
+    <ClInclude Include="property_query_world.h" />
+    <ClInclude Include="property_region.h" />
+    <ClInclude Include="property_regions.h" />
+    <ClInclude Include="property_registry.h" />
+    <ClInclude Include="property_support.h" />
+    <ClInclude Include="ProtocolMessage_Bot.h" />
+    <ClInclude Include="QueryFilterDialog.h" />
+    <ClInclude Include="QueryInterfaceDialog.h" />
+    <ClInclude Include="QueryProgressDialog.h" />
+    <ClInclude Include="QueryWorldProgressDialog.h" />
+    <ClInclude Include="Query_Area5x5.h" />
+    <ClInclude Include="raw_param_editor.h" />
+    <ClInclude Include="Recorder.h" />
+    <ClInclude Include="RecordingDialog.h" />
+    <ClInclude Include="RelayAdvancedRelay.h" />
+    <ClInclude Include="RelayAdvanced_AG.h" />
+    <ClInclude Include="RelayChannelPermissionDialog.h" />
+    <ClInclude Include="RelayChannelsConfigDialog.h" />
+    <ClInclude Include="RelayChannelsDialog.h" />
+    <ClInclude Include="RelayChannel_AG.h" />
+    <ClInclude Include="RelayColorTableEntry_AG.h" />
+    <ClInclude Include="RelayConfigDialog.h" />
+    <ClInclude Include="RelayConfigUsersDialog.h" />
+    <ClInclude Include="RelayGlobalChat.h" />
+    <ClInclude Include="RelayGlobalChatAex.h" />
+    <ClInclude Include="RelayGlobalChatAex_AG.h" />
+    <ClInclude Include="RelayGlobalChat_AG.h" />
+    <ClInclude Include="RelayMuteList.h" />
+    <ClInclude Include="RelayPrivateChannels.h" />
+    <ClInclude Include="RelayRelay.h" />
+    <ClInclude Include="RelayRelay_AG.h" />
+    <ClInclude Include="RepeaterDialog.h" />
+    <ClInclude Include="RepetitionTimer.h" />
+    <ClInclude Include="ReportDialog.h" />
+    <ClInclude Include="Reports.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RichEditCtrl_Ext.h" />
+    <ClInclude Include="RightsList.h" />
+    <ClInclude Include="ScriptEditorDialog.h" />
+    <ClInclude Include="scripting_aw.h" />
+    <ClInclude Include="scripting_evo2.h" />
+    <ClInclude Include="scripting_evo2_odbc.h" />
+    <ClInclude Include="scripting_freestore.h" />
+    <ClInclude Include="scripting_host.h" />
+    <ClInclude Include="scripting_iterator.h" />
+    <ClInclude Include="scripting_timer.h" />
+    <ClInclude Include="SecurityHeaderDialog.h" />
+    <ClInclude Include="SecurityListDialog.h" />
+    <ClInclude Include="SecurityRightsDialog.h" />
+    <ClInclude Include="SelectUrlDialog.h" />
+    <ClInclude Include="SerializationEditorDialog.h" />
+    <ClInclude Include="Serializer.h" />
+    <ClInclude Include="SingleLineDialog.h" />
+    <ClInclude Include="SliderCtrlEx.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StringConversion.h" />
+    <ClInclude Include="stringenum.h" />
+    <ClInclude Include="stringtoolkit.h" />
+    <ClInclude Include="SystemWordsFilter.h" />
+    <ClInclude Include="s_ptr.h" />
+    <ClInclude Include="table.h" />
+    <ClInclude Include="TeleportDialog.h" />
+    <ClInclude Include="TextBox.h" />
+    <ClInclude Include="TextListDialog.h" />
+    <ClInclude Include="TreeCtrlGpx.h" />
+    <ClInclude Include="TreeCtrlGpx_Std.h" />
+    <ClInclude Include="TreeCtrlT.h" />
+    <ClInclude Include="tsb.h" />
+    <ClInclude Include="umbra\umbra_callstackmonitor.h" />
+    <ClInclude Include="umbra\umbra_classlib.h" />
+    <ClInclude Include="umbra\umbra_classlib_ifunction.h" />
+    <ClInclude Include="umbra\umbra_classlib_iterator.h" />
+    <ClInclude Include="umbra\umbra_classlib_math.h" />
+    <ClInclude Include="umbra\umbra_classlib_system.h" />
+    <ClInclude Include="umbra\umbra_classlib_systemtime.h" />
+    <ClInclude Include="umbra\umbra_classlib_usl.h" />
+    <ClInclude Include="umbra\umbra_classlib_usl_adodb.h" />
+    <ClInclude Include="umbra\umbra_classlib_usl_array.h" />
+    <ClInclude Include="umbra\umbra_classlib_usl_colourlist.h" />
+    <ClInclude Include="umbra\umbra_classlib_usl_crypto.h" />
+    <ClInclude Include="umbra\umbra_classlib_usl_crypto_crc32.h" />
+    <ClInclude Include="umbra\umbra_classlib_usl_datetime.h" />
+    <ClInclude Include="umbra\umbra_classlib_usl_file.h" />
+    <ClInclude Include="umbra\umbra_classlib_usl_fileinfo.h" />
+    <ClInclude Include="umbra\umbra_classlib_usl_urlparseinfo.h" />
+    <ClInclude Include="umbra\umbra_classlib_usl_vector.h" />
+    <ClInclude Include="umbra\umbra_classlib_win32.h" />
+    <ClInclude Include="umbra\umbra_classlib_win32_filesystem.h" />
+    <ClInclude Include="umbra\umbra_classlib_win32_gdi.h" />
+    <ClInclude Include="umbra\umbra_compiler.h" />
+    <ClInclude Include="umbra\umbra_cst_httprequest.h" />
+    <ClInclude Include="umbra\umbra_cst_winsocket.h" />
+    <ClInclude Include="umbra\umbra_executioncontroller.h" />
+    <ClInclude Include="umbra\umbra_helpertools.h" />
+    <ClInclude Include="umbra\umbra_host.h" />
+    <ClInclude Include="umbra\umbra_hostclass.h" />
+    <ClInclude Include="umbra\umbra_hostfunction.h" />
+    <ClInclude Include="umbra\umbra_instructions_controlstatements.h" />
+    <ClInclude Include="umbra\umbra_instructions_managed.h" />
+    <ClInclude Include="umbra\umbra_instructions_opcodes.h" />
+    <ClInclude Include="umbra\umbra_remoteclass.h" />
+    <ClInclude Include="umbra\umbra_remoteclassexceptions.h" />
+    <ClInclude Include="umbra\umbra_remoteclassmacros.h" />
+    <ClInclude Include="umbra\umbra_resourcemanager.h" />
+    <ClInclude Include="umbra\umbra_rtstring.h" />
+    <ClInclude Include="umbra\umbra_runtimecode.h" />
+    <ClInclude Include="umbra\umbra_runtimefunction.h" />
+    <ClInclude Include="umbra\umbra_token.h" />
+    <ClInclude Include="umbra\umbra_tokenizer.h" />
+    <ClInclude Include="umbra\umbra_tokenlist.h" />
+    <ClInclude Include="umbra\umbra_tokenmap.h" />
+    <ClInclude Include="umbra\umbra_tools.h" />
+    <ClInclude Include="umbra\umbra_typedef.h" />
+    <ClInclude Include="umbra\umbra_uptr.h" />
+    <ClInclude Include="umbra\umbra_variant.h" />
+    <ClInclude Include="umbra\umbra_variantmap.h" />
+    <ClInclude Include="umbra\umbra_variantmemory.h" />
+    <ClInclude Include="UniverseCitizenAddDialog.h" />
+    <ClInclude Include="UniverseCitizenDialog.h" />
+    <ClInclude Include="UniverseEjectionDialog.h" />
+    <ClInclude Include="UniverseOptionsDialog.h" />
+    <ClInclude Include="UniverseUserList.h" />
+    <ClInclude Include="uptr.h" />
+    <ClInclude Include="ur_ptr.h" />
+    <ClInclude Include="UserProfile_FreeJoin.h" />
+    <ClInclude Include="UserProfile_FreeJoin_AG.h" />
+    <ClInclude Include="Validators.h" />
+    <ClInclude Include="versions.h" />
+    <ClInclude Include="WA_Group.h" />
+    <ClInclude Include="web.h" />
+    <ClInclude Include="WebClientDialog.h" />
+    <ClInclude Include="WorldAttributes.h" />
+    <ClInclude Include="WorldEjectionsDialog.h" />
+    <ClInclude Include="WorldList.h" />
+    <ClInclude Include="WorldOptionsDialog.h" />
+    <ClInclude Include="WorldOptionsDialog_AG.h" />
+    <ClInclude Include="WorldsListDialog2.h" />
+    <ClInclude Include="World_Ejections.h" />
+    <ClInclude Include="xml_docparser.h" />
+    <ClInclude Include="ZoneConnector.h" />
+    <ClInclude Include="ZoneEditorDialog.h" />
+    <ClInclude Include="Zones.h" />
+    <ClInclude Include="ZonesConfigDialog.h" />
+    <ClInclude Include="ZonesEditorCylinderDialog.h" />
+    <ClInclude Include="ZonesEditorPolygonDialog.h" />
+    <ClInclude Include="ZonesEditorRectangleDialog.h" />
+    <ClInclude Include="ZonesEditorSphereDialog.h" />
+    <ClInclude Include="Zones_ConfigGeneral.h" />
+    <ClInclude Include="Zones_ConfigGeneral_AG.h" />
+    <ClInclude Include="Zones_ConfigHyperion.h" />
+    <ClInclude Include="Zones_ConfigHyperion_AG.h" />
+    <ClInclude Include="Zones_Zone_AG.h" />
+    <ClInclude Include="zone_access_entry.h" />
+    <ClInclude Include="zone_regions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\beep1.wav" />
+    <Media Include="res\beep2.wav" />
+    <Media Include="res\beep3.wav" />
+    <Media Include="res\wav_pleasestandby.wav" />
+    <Media Include="res\wav_unabletocomply.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\aw_icons\bitmap2.bmp" />
+    <Image Include="..\aw_icons\g_pri.bmp" />
+    <Image Include="..\aw_icons\g_pub.bmp" />
+    <Image Include="..\aw_icons\pg13_pri.bmp" />
+    <Image Include="..\aw_icons\pg13_pub.bmp" />
+    <Image Include="..\aw_icons\pg_pri.bmp" />
+    <Image Include="..\aw_icons\pg_pub.bmp" />
+    <Image Include="..\aw_icons\r_pri.bmp" />
+    <Image Include="..\aw_icons\r_pub.bmp" />
+    <Image Include="..\aw_icons\unknown.bmp" />
+    <Image Include="..\aw_icons\unknown_pub.bmp" />
+    <Image Include="..\aw_icons\x_pri.bmp" />
+    <Image Include="..\aw_icons\x_pub.bmp" />
+    <Image Include="res\blue_4.ico" />
+    <Image Include="res\blue_5.ico" />
+    <Image Include="res\blue_6.ico" />
+    <Image Include="res\blue_7.ico" />
+    <Image Include="res\EclipseEvolution.ico" />
+    <Image Include="res\ico00001.ico" />
+    <Image Include="res\ico00002.ico" />
+    <Image Include="res\ico00003.ico" />
+    <Image Include="res\ico00004.ico" />
+    <Image Include="res\ico00005.ico" />
+    <Image Include="res\ico00006.ico" />
+    <Image Include="res\ico00007.ico" />
+    <Image Include="res\ico00008.ico" />
+    <Image Include="res\ico00009.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\icon2.ico" />
+    <Image Include="res\icon3.ico" />
+    <Image Include="res\icon4.ico" />
+    <Image Include="res\icon5.ico" />
+    <Image Include="res\icon6.ico" />
+    <Image Include="res\icon7.ico" />
+    <Image Include="res\icon8.ico" />
+    <Image Include="res\icon9.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EclipseEvolution.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\EclipseEvolution.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="changes.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties _x007B_8856F961-340A-11D0-A96B-00C04FD705A2_x007D_="CWeb" RESOURCE_FILE="EclipseEvolution.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

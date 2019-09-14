@@ -1,0 +1,14 @@
+BGTP-1: test1-85486
+to: 334303
+next: efd84cf17782a0cd411def6b16c44347
+part: 2
+
+(str_replace('"', '', $av->name));
+			if ($eu == null)
+			{
+				$av->whisper('Hello - It looks like you have not yet registered with Awportals.com. To register with Awportals WHISPER the following command to me: /register youremail@yourdomain.com desiredpassword');
+				$av->whisper('Upon registering you will be sent an activation email which you must follow the instructions within.');
+			}
+		}
+		
+		public function Event

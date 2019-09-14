@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EclipseEvolution", "EclipseEvolution\EclipseEvolution.vcproj", "{C522E113-31BB-427F-BBFE-C43A6111F4C6}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EclipseSetup", "EclipseSetup\EclipseSetup.vdproj", "{53A6732F-8DBF-4E05-B254-9150F319EA4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release_WithDebug|Win32 = Release_WithDebug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C522E113-31BB-427F-BBFE-C43A6111F4C6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C522E113-31BB-427F-BBFE-C43A6111F4C6}.Debug|Win32.Build.0 = Debug|Win32
+		{C522E113-31BB-427F-BBFE-C43A6111F4C6}.Release_WithDebug|Win32.ActiveCfg = Release_WithDebug|Win32
+		{C522E113-31BB-427F-BBFE-C43A6111F4C6}.Release_WithDebug|Win32.Build.0 = Release_WithDebug|Win32
+		{C522E113-31BB-427F-BBFE-C43A6111F4C6}.Release|Win32.ActiveCfg = Release|Win32
+		{C522E113-31BB-427F-BBFE-C43A6111F4C6}.Release|Win32.Build.0 = Release|Win32
+		{53A6732F-8DBF-4E05-B254-9150F319EA4F}.Debug|Win32.ActiveCfg = Debug
+		{53A6732F-8DBF-4E05-B254-9150F319EA4F}.Release_WithDebug|Win32.ActiveCfg = Release_WithDebug
+		{53A6732F-8DBF-4E05-B254-9150F319EA4F}.Release|Win32.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

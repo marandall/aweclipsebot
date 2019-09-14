@@ -1,0 +1,58 @@
+#pragma once
+
+namespace AW
+{
+	namespace ObjectFormats
+	{
+		enum PROPDUMP_VERSION_2_ALIGNMENT
+		{
+			V2_OWNER				= 0,
+			V2_TIMESTAMP,
+			V2_X,
+			V2_Y,
+			V2_Z,
+			V2_YAW,
+			V2_MODEL_LEN,
+			V2_DESCRIPTION_LEN,
+			V2_ACTION_LEN,
+			V2_STRING_DATA,
+			V2_MAX_ALIGNMENT
+		};
+
+		enum PROPDUMP_VERSION_3_ALIGNMENT
+		{
+			V3_OWNER				= 0,
+			V3_TIMESTAMP,
+			V3_X,
+			V3_Y,
+			V3_Z,
+			V3_YAW,
+			V3_TILT,
+			V3_ROLL,
+			V3_MODEL_LEN,
+			V3_DESCRIPTION_LEN,
+			V3_ACTION_LEN,
+			V3_STRING_DATA,
+			V3_MAX_ALIGNMENT
+		};
+
+		enum PROPDUMP_VERSION_4_ALIGNMENT
+		{
+			V4_OWNER				= 0,
+			V4_TIMESTAMP,
+			V4_X,
+			V4_Y,
+			V4_Z,
+			V4_YAW,
+			V4_TILT,
+			V4_ROLL,
+			V4_TYPE,
+			V4_MODEL_LEN,
+			V4_DESCRIPTION_LEN,
+			V4_ACTION_LEN,
+			V4_BINARY_LEN,
+			V4_STRING_DATA,
+			V4_MAX_ALIGNMENT
+		};
+	}
+}

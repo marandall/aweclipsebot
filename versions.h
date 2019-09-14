@@ -1,0 +1,4 @@
+#pragma once
+
+#define EVOLUTION_VERSION	551
+#define EVOLUTION_IDENTIFY	"2.5.0.551"

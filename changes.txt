@@ -1,0 +1,2 @@
+* Added new commands for easier chat
+* Fixed problem where default not set if first channel joined is not #world

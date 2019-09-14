@@ -1,0 +1,5 @@
+#pragma once
+
+#define TIMER_PROC_BOT_HEARTBEAT		1
+#define TIMER_PROC_SECONDS				2
+#define TIMER_PROC_AVATAR_UPDATES		3
